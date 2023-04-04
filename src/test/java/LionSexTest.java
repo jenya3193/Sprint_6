@@ -32,7 +32,7 @@ public class LionSexTest {
     @Test
     public void doesHaveManeTest() throws Exception {
         Lion lion = new Lion(sex,feline);
-        assertEquals(lion.doesHaveMane(), mane);
+        assertEquals(mane, lion.doesHaveMane());
     }
 
 }

@@ -13,25 +13,25 @@ public class FelineClassTest {
     @Test
     public void eatMeatTest() throws Exception {
         Feline feline = new Feline();
-        assertEquals(feline.eatMeat(), List.of("Животные", "Птицы", "Рыба"));
+        assertEquals(List.of("Животные", "Птицы", "Рыба"), feline.eatMeat());
     }
 
     @Test
     public void getFamilyTest() {
         Feline feline = new Feline();
-        assertEquals(feline.getFamily(), "Кошачьи");
+        assertEquals("Кошачьи", feline.getFamily());
     }
 
     @Test
     public void getKittensTest() {
         Feline feline = new Feline();
-        assertEquals(feline.getKittens(), 1);
+        assertEquals(1, feline.getKittens());
     }
 
     @Test
     public void getKittensIntTest() {
         Feline feline = new Feline();
-        assertEquals(feline.getKittens(5), 5);
+        assertEquals(5, feline.getKittens(5));
     }
 
 }
